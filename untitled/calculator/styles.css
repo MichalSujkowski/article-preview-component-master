@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee2e7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 500px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.container .screen{
+    /*width: %;*/
+    height: 40px;
+}
+
+.screen input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons .btn {
+    width: 60px;
+    height: 52px;
+    border: 1px solid red
+}

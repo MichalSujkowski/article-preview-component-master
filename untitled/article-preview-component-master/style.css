@@ -30,7 +30,8 @@ body {
     height: 325px;
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    position: relative;
 }
 
 .wrapper .image {
@@ -39,6 +40,9 @@ body {
     background-size: cover;
     width: 45%;
     height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .wrapper .information-container {
@@ -106,6 +110,39 @@ body {
     color: var(--ddblue);
 }
 
+.share-icons {
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    width: 235px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vdgblue);
+    border-radius: 10px;
+    color: var(--lgblue);
+    z-index: 1;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+
+.active {
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+
+.share-icons p {
+    letter-spacing: 2px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.share-icons i {
+    margin: 8px;
+}
 
 /* attribution */
 .attribution {

@@ -6,3 +6,6 @@ const shareFunc = () => {
 }
 
 shareBtn.addEventListener('click', shareFunc);
+shareIcons.addEventListener('click', () => {
+    shareIcons.classList.remove('active');
+});

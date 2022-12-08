@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    --vdgblue: hsl(217, 19%, 35%);
+    --ddblue: hsl(214, 17%, 51%);
+    --gblue: hsl(212, 23%, 69%);
+    --lgblue: hsl(210, 46%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--lgblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 10px;
+    width: 865px;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.wrapper .image {
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+}
+
+.wrapper .information-container {
+    width: calc(100% - 45%);
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.information-container .first-txt {
+    font-size: 23px;
+    color: var(--vdgblue);
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.information-container .second-txt {
+    color: var(--vdgblue);
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.information-container .person-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.person-info .face {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.person-info > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .name {
+    color: var(--vdgblue);
+    font-weight: 700;
+}
+
+.arrow {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: var(--lgblue);
+    cursor: pointer;
+}
+
+.arrow .arr {
+    height: 15px;
+    width: 15px;
+}
+
+.info .date {
+    color: var(--ddblue);
+}
+
+
+/* attribution */
+.attribution {
+    display: none;
+}

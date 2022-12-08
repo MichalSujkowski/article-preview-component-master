@@ -113,7 +113,7 @@ body {
 .share-icons {
     position: absolute;
     top: 50%;
-    right: -50px;
+    right: -45px;
     width: 235px;
     height: 50px;
     display: flex;
@@ -122,10 +122,21 @@ body {
     background-color: var(--vdgblue);
     border-radius: 10px;
     color: var(--lgblue);
-    z-index: 1;
     font-size: 20px;
     opacity: 0;
     transition: opacity .4s linear;
+
+}
+
+.share-icons > div {
+    height: 25px;
+    width: 25px;
+    background-color: var(--vdgblue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%) rotate(45deg);
+    z-index: 0;
 }
 
 .active {
@@ -142,6 +153,7 @@ body {
 
 .share-icons i {
     margin: 8px;
+    z-index: 2;
 }
 
 /* attribution */
